@@ -10,4 +10,70 @@
   width: 100vw;
   height: 100vh;
   display: flex;
+  justify-content: center;
+}
+
+.hero_details {
+  margin-top: 8rem;
+  margin-left: 10rem;
+}
+
+.hero_title {
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+.hero_png {
+  width: 55rem;
+  margin-top: -5rem;
+  object-fit: cover;
+}
+
+.hero_title_logo {
+  color: #FA541C;
+  letter-spacing: 0.5px;
+  font-size: 5rem;
+}
+
+.hero_title_par {
+  color: #919EAB;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.hero_btn {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  padding: 12px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.hero_btn:hover {
+  background-color: #919EAB;
+  transition: all 0.3s;
+}
+
+.hero_available {
+  font-size: 0.8rem;
+  color: #fff;
+  padding-top: 2rem;
+  font-weight: 600;
+}
+
+.logo_icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.logo_icons_item {
+  font-size: 1.3rem;
+  color: #fff;
 }

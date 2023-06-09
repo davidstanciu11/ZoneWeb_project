@@ -18,7 +18,7 @@ export default function Header() {
     });
   });
 
-  const handleClick = (event) => {
+  const handleClick = () => {
     setIsShown((current) => !current);
   };
 
@@ -179,15 +179,25 @@ export default function Header() {
           <div className="nav_circles">
             <i className="icons_nav">
               <BsSearch onClick={handleClick} />
-              {isShown && <div>
-                <input type="text" className="input_search"/>
-                <button className="search_btn" onClick={handleClick}>Search</button>
-                </div>}
+              {isShown && (
+                <div className="input_container">
+                  <div></div>
+                  <BsSearch className="search_icon" />
+                  <input
+                    type="text"
+                    className="input_search"
+                    placeholder="Search..."
+                  />
+                  <button className="search_btn" onClick={handleClick}>
+                    Search
+                  </button>
+                </div>
+              )}
             </i>
           </div>
           <div className="nav_circles">
             <i className="icons_nav">
-              <FiSettings className="setting_rotate" onClick={handleClick} />
+              <FiSettings className="setting_rotate"/>
               <span className="circe_settings"></span>
             </i>
           </div>
