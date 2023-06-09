@@ -3,14 +3,25 @@ import "./Header.style.css";
 import { BsSearch, BsChevronCompactDown } from "react-icons/bs";
 import { FiSettings } from "react-icons/fi";
 import { useState, useEffect } from "react";
+import MarketingPagepng from "../assets/menu_marketing.jpg";
+import EcommercePagepng from "../assets/menu_ecommerce.jpg";
+import ElearningPagepng from "../assets/menu_elearning.jpg";
+import TravelPagepng from "../assets/menu_travel.jpg";
+import CareerPagepng from "../assets/menu_career.jpg";
 
 export default function Header() {
+  const [isShown, setIsShown] = useState(false);
   const [header, setHeader] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       window.scrollY > 36 ? setHeader(true) : setHeader(false);
     });
   });
+
+  const handleClick = (event) => {
+    setIsShown((current) => !current);
+  };
+
   return (
     <>
       <nav className={`${header ? "navbar_scroll" : "navbar_top"} navbar`}>
@@ -33,13 +44,132 @@ export default function Header() {
             <div className="dropdown_content">
               <div className="flex_dropdown">
                 <div className="dropdown_first_part">
-                  <div className="nav_sites_dropdown"></div>
-                  <div className="nav_sites_dropdown"></div>
-                  <div className="nav_sites_dropdown"></div>
-                  <div className="nav_sites_dropdown"></div>
-                  <div className="nav_sites_dropdown"></div>
+                  <div className="nav_sites_dropdown">
+                    <div className="dropdown_container_list">
+                      <h4 className="dropdown_pages_title">Marketing</h4>
+                      <img
+                        src={MarketingPagepng}
+                        alt=""
+                        className="dropdown_pages_img"
+                      />
+                      <ul className="dropdown_pages_list">
+                        <li className="dropdown_li_item">Landing</li>
+                        <li className="dropdown_li_item">Services</li>
+                        <li className="dropdown_li_item">Case Studies</li>
+                        <li className="dropdown_li_item">Case Study</li>
+                        <li className="dropdown_li_item">Blog Posts</li>
+                        <li className="dropdown_li_item">Blog Post</li>
+                        <li className="dropdown_li_item">About</li>
+                        <li className="dropdown_li_item">Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="nav_sites_dropdown">
+                    <div className="dropdown_container_list">
+                      <h4 className="dropdown_pages_title">Travel</h4>
+                      <img
+                        src={TravelPagepng}
+                        alt=""
+                        className="dropdown_pages_img"
+                      />
+                      <ul className="dropdown_pages_list">
+                        <li className="dropdown_li_item">Landing</li>
+                        <li className="dropdown_li_item">Tours</li>
+                        <li className="dropdown_li_item">Tour</li>
+                        <li className="dropdown_li_item">Checkout</li>
+                        <li className="dropdown_li_item">Order Completed</li>
+                        <li className="dropdown_li_item">Blog Posts</li>
+                        <li className="dropdown_li_item">Blog Post</li>
+                        <li className="dropdown_li_item">About</li>
+                        <li className="dropdown_li_item">Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="nav_sites_dropdown">
+                    <div className="dropdown_container_list">
+                      <h4 className="dropdown_pages_title">Career</h4>
+                      <img
+                        src={CareerPagepng}
+                        alt=""
+                        className="dropdown_pages_img"
+                      />
+                      <ul className="dropdown_pages_list">
+                        <li className="dropdown_li_item">Landing</li>
+                        <li className="dropdown_li_item">Jobs</li>
+                        <li className="dropdown_li_item">Job</li>
+                        <li className="dropdown_li_item">Blog Posts</li>
+                        <li className="dropdown_li_item">Blog Post</li>
+                        <li className="dropdown_li_item">About</li>
+                        <li className="dropdown_li_item">Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="nav_sites_dropdown">
+                    <div className="dropdown_container_list">
+                      <h4 className="dropdown_pages_title">E-learning</h4>
+                      <img
+                        src={ElearningPagepng}
+                        alt=""
+                        className="dropdown_pages_img"
+                      />
+                      <ul className="dropdown_pages_list">
+                        <li className="dropdown_li_item">Landing</li>
+                        <li className="dropdown_li_item">Courses</li>
+                        <li className="dropdown_li_item">Course</li>
+                        <li className="dropdown_li_item">Blog Posts</li>
+                        <li className="dropdown_li_item">Blog Post</li>
+                        <li className="dropdown_li_item">About</li>
+                        <li className="dropdown_li_item">Contact</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="nav_sites_dropdown">
+                    <div className="dropdown_container_list">
+                      <h4 className="dropdown_pages_title">E-commerce</h4>
+                      <img
+                        src={EcommercePagepng}
+                        alt=""
+                        className="dropdown_pages_img"
+                      />
+                      <ul className="dropdown_pages_list">
+                        <li className="dropdown_li_item">Landing</li>
+                        <li className="dropdown_li_item">Products</li>
+                        <li className="dropdown_li_item">Product</li>
+                        <li className="dropdown_li_item">Cart</li>
+                        <li className="dropdown_li_item">Checkout</li>
+                        <li className="dropdown_li_item">Order Completed</li>
+                        <li className="dropdown_li_item">Wishlist</li>
+                        <li className="dropdown_li_item">Compare</li>
+                        <li className="dropdown_li_item">Account Personal</li>
+                        <li className="dropdown_li_item">Account Wishlist</li>
+                        <li className="dropdown_li_item">Account Vouchers</li>
+                        <li className="dropdown_li_item">Account Orders</li>
+                        <li className="dropdown_li_item">Account Payment</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div className="dropdown_second_part"></div>
+                <div className="dropdown_second_part">
+                  <h4 className="dropdown_pages_title">Common</h4>
+                  <ul className="dropdown_pages_list">
+                    <li className="dropdown_li_item">Login Cover</li>
+                    <li className="dropdown_li_item">Login Illustration</li>
+                    <li className="dropdown_li_item">Login Background</li>
+                    <li className="dropdown_li_item">Register Cover</li>
+                    <li className="dropdown_li_item">Register Illustration</li>
+                    <li className="dropdown_li_item">Register Background</li>
+                    <li className="dropdown_li_item">Reset Password</li>
+                    <li className="dropdown_li_item">Verify Code</li>
+                    <li className="dropdown_li_item">404 Error</li>
+                    <li className="dropdown_li_item">500 Error</li>
+                    <li className="dropdown_li_item">Maintenance</li>
+                    <li className="dropdown_li_item">Coming Soon</li>
+                    <li className="dropdown_li_item">Pricing Plan 1</li>
+                    <li className="dropdown_li_item">Pricing Plan 2</li>
+                    <li className="dropdown_li_item">Payment</li>
+                    <li className="dropdown_li_item">Support</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -48,12 +178,16 @@ export default function Header() {
         <div className="second_nav_part">
           <div className="nav_circles">
             <i className="icons_nav">
-              <BsSearch />
+              <BsSearch onClick={handleClick} />
+              {isShown && <div>
+                <input type="text" className="input_search"/>
+                <button className="search_btn" onClick={handleClick}>Search</button>
+                </div>}
             </i>
           </div>
           <div className="nav_circles">
             <i className="icons_nav">
-              <FiSettings className="setting_rotate" />
+              <FiSettings className="setting_rotate" onClick={handleClick} />
               <span className="circe_settings"></span>
             </i>
           </div>

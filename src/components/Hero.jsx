@@ -1,4 +1,5 @@
 import "./Hero.style.css";
+import HomeHeropng from "../assets/home_hero.png";
 
 export default function Hero() {
   return (
