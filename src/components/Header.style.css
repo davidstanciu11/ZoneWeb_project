@@ -7,6 +7,7 @@
   padding-top: 1.5rem;
   padding-bottom: 1rem;
   position: fixed;
+  z-index: 999;
 }
 
 .logo_title {
@@ -214,7 +215,8 @@
 }
 
 .navbar_scroll {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(9px);
 }
 
 .navbar_top {
