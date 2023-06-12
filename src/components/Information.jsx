@@ -1,22 +1,21 @@
 import "./Information.style.css";
 import { BsChevronRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import {
-  Button,
-  CircularProgress,
-  Tabs,
-  Tab,
-  Box,
-  ToggleButton,
-  ToggleButtonGroup,
-  
-} from "@mui/material";
+//prettier-ignore
+import {Button, CircularProgress, Tabs, Tab, Box, Avatar, Rating, Slider, Switch, Checkbox, Radio, TextField} from "@mui/material";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import { useState, useEffect } from "react";
 import { GrCloudUpload } from "react-icons/gr";
-import { TfiLayoutMediaCenterAlt } from "react-icons/tfi";
+import { AiOutlineCheckCircle } from "react-icons/ai";
+import { CiAlignLeft, CiAlignRight, CiAlignCenterH } from "react-icons/ci";
+import AvatarGirl from "../assets/avatar_1.jpg";
+import AvatarOrange from "../assets/avatar_2.jpg";
+import AvatarGlasses from "../assets/avatar_3.jpg";
+import AvatarBoy from "../assets/avatar_5.jpg";
 
 export default function Information() {
-    const [alignment, setAlignment] = useState('left');
   const [progress, setProgress] = useState(0);
   const [value, setValue] = useState("one");
   useEffect(() => {
@@ -34,11 +33,19 @@ export default function Information() {
     setValue(newvalue);
   };
 
-  const handleAlignment = (event, newAlignment) => {
-    if (newAlignment !== null) {
-      setAlignment(newAlignment);
-    }
+  const [selectedValue, setSelectedValue] = useState("a");
+
+  const changeValue = (event) => {
+    setSelectedValue(event.target.value);
   };
+
+  const controlProps = (item) => ({
+    checked: selectedValue === item,
+    onChange: changeValue,
+    value: item,
+    name: "color-radio-button-demo",
+    inputProps: { "aria-label": item },
+  });
 
   return (
     <>
@@ -64,20 +71,36 @@ export default function Information() {
                 variant="contained"
                 size="large"
                 sx={{
+                  borderRadius: 2,
                   backgroundColor: "#754FFE",
                   fontSize: "0.9rem",
                   fontWeight: "bold",
                   fontFamily: "'Barlow', sans-serif",
-                  padding: "12px 20px",
+                  padding: "12px 23px",
                   ":hover": { backgroundColor: "#4027B6" },
                   zIndex: "1",
+                  textTransform: "none",
                 }}
               >
                 + Add to Cart
               </Button>
-              <button className="btn_cloud">
+              <Button
+                sx={{
+                  borderRadius: 6,
+                  backgroundColor: "#fff",
+                  fontSize: "0.9rem",
+                  fontWeight: "bold",
+                  fontFamily: "'Barlow', sans-serif",
+                  padding: "12px 20px",
+                  color: "#000",
+                  display: "flex",
+                  gap: "0.4rem",
+                  ":hover": { backgroundColor: "#D6DCE2" },
+                  zIndex: "1",
+                }}
+              >
                 <GrCloudUpload /> Upload
-              </button>
+              </Button>
               <Button
                 type="submit"
                 color="primary"
@@ -91,7 +114,20 @@ export default function Information() {
                   boxShadow: "rgba(0, 184, 217, 0.24) 0px 8px 16px 0px",
                 }}
               >
-                <TfiLayoutMediaCenterAlt />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  role="img"
+                  width="1.3rem"
+                  height="1.3rem"
+                  viewBox="0 0 32 32"
+                >
+                  <path fill="currentColor" d="M13 15v8l7-4l-7-4z"></path>
+                  <path
+                    fill="currentColor"
+                    d="M26 28H6a2.002 2.002 0 0 1-2-2V12a2.002 2.002 0 0 1 2-2h20a2.002 2.002 0 0 1 2 2v14a2.002 2.002 0 0 1-2 2zM6 12v14h20V12zm0-6h20v2H6zm2-4h16v2H8z"
+                  ></path>
+                </svg>
               </Button>
               <CircularProgress
                 variant="determinate"
@@ -105,10 +141,9 @@ export default function Information() {
                 <Tabs
                   value={value}
                   onChange={handleChange}
-                  textColor="secondary"
-                  indicatorColor="secondary"
+                  textColor="primary"
+                  indicatorColor="primary"
                   aria-label="secondary tabs example"
-                  sx={{ color: "#fff" }}
                 >
                   <Tab
                     value="one"
@@ -118,6 +153,7 @@ export default function Information() {
                       fontSize: "0.7rem",
                       fontWeight: "bold",
                     }}
+                    className="Tabs"
                   />
                   <Tab
                     value="two"
@@ -139,25 +175,136 @@ export default function Information() {
                   />
                 </Tabs>
               </Box>
-              <ToggleButtonGroup
-                value={alignment}
-                exclusive
-                onChange={handleAlignment}
-                aria-label="text alignment"
+              <div className="toggle_btns">
+                <button className="btns_items">
+                  <CiAlignLeft />
+                </button>
+                <button className="btns_items">
+                  <CiAlignCenterH />
+                </button>
+                <button className="btns_items">
+                  <CiAlignRight />
+                </button>
+              </div>
+              <Button
+                sx={{
+                  borderRadius: 2,
+                  backgroundColor: "#3A2523",
+                  fontSize: "0.9rem",
+                  fontWeight: "inherit",
+                  fontFamily: "'Barlow', sans-serif",
+                  padding: "5px 30px",
+                  color: "#DF9668",
+                  display: "flex",
+                  gap: "0.4rem",
+                  ":hover": { backgroundColor: "#592D21" },
+                  zIndex: "1",
+                  textTransform: "none",
+                }}
               >
-                <ToggleButton value="left" aria-label="left aligned">
-                </ToggleButton>
-                <ToggleButton value="center" aria-label="centered">
-                </ToggleButton>
-                <ToggleButton value="right" aria-label="right aligned">
-                </ToggleButton>
-              </ToggleButtonGroup>
+                <Avatar
+                  sx={{
+                    bgcolor: "#B3200E",
+                    height: "1.3rem",
+                    width: "1.3rem",
+                    fontSize: "1rem",
+                    padding: "2px",
+                  }}
+                >
+                  P
+                </Avatar>{" "}
+                Pamela <div className="close_btn">X</div>
+              </Button>
             </div>
-            <div></div>
-            <div></div>
-            <div>
-              <div></div>
-              <div></div>
+            <div className="info_buttons">
+              <div className="info_avatars">
+                <img
+                  src={AvatarBoy}
+                  alt="avatar boy"
+                  className="avatars_png avatar_boy"
+                />
+                <img
+                  src={AvatarGirl}
+                  alt="avatar girl"
+                  className="avatars_png"
+                />
+                <img
+                  src={AvatarOrange}
+                  alt="avatar girl"
+                  className="avatars_png"
+                />
+                <img
+                  src={AvatarGlasses}
+                  alt="avatar girl"
+                  className="avatars_png"
+                />
+                <div className="avatar_plus">+5</div>
+              </div>
+              <div>
+                <Rating defaultValue={5} size="large" sx={{ color: "gold" }} />
+              </div>
+            </div>
+            <div className="info_buttons">
+              <Box width={250}>
+                <Slider
+                  size="small"
+                  defaultValue={20}
+                  aria-label="Always visible"
+                  valueLabelDisplay="on"
+                  sx={{ color: "#FA541C" }}
+                />
+              </Box>
+              <div className="success_container">
+                <AiOutlineCheckCircle className="check" />
+                <p className="success_msg">
+                  This is a <b className="bold">success</b> alert.
+                </p>
+                <button className="close_success">x</button>
+              </div>
+            </div>
+            <div className="info_buttons">
+              <div className="calendar">
+                <LocalizationProvider dateAdapter={AdapterDayjs}>
+                  <DateCalendar />
+                </LocalizationProvider>
+              </div>
+              <div className="second_part_btns">
+                <div className="flex_label">
+                  <Switch size="large" />
+                  <p className="switch_label">Switch</p>
+                </div>
+                <div className="flex_label">
+                  <Checkbox />
+                  <p className="switch_label">Checkbox</p>
+                </div>
+                <div className="flex_label">
+                  {" "}
+                  <Radio
+                    {...controlProps("e")}
+                    sx={{
+                      color: "#FA541C",
+                      "&.Mui-checked": {
+                        color: "#FA541C",
+                      },
+                    }}
+                  />
+                  <p className="switch_label">Radio Button</p>
+                </div>
+                <Box
+                  component="form"
+                  sx={{
+                    "& > :not(style)": { m: 1, width: "25ch" },
+                  }}
+                  noValidate
+                  autoComplete="off"
+                >
+                  <TextField
+                    id="outlined-basic"
+                    label="Full Name"
+                    variant="outlined"
+                  />
+                </Box>
+              </div>
             </div>
           </div>
         </div>
