@@ -1,0 +1,134 @@
+.section_plans {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #161c24;
+}
+
+.plans_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plans_desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.plans_container {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.plans_sub {
+  color: #637381;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.plans_title {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 900;
+}
+
+.plans_par {
+  max-width: 22rem;
+  color: #919eab;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.plan_card {
+  width: 355px;
+  height: 650px;
+  background-color: rgb(33, 43, 54);
+  border-radius: 25px;
+  box-shadow: rgba(12, 12, 12, 0.2) 0px 8px 24px;
+}
+
+.plan_card_middle {
+  height: 730px;
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+}
+
+.card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 35px;
+  position: relative;
+}
+
+.plan_name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.plan_price {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.popular_tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #61f3f3;
+  background-color: #1c4250;
+  width: 4rem;
+  height: 1.3rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 50px 25px 10px 25px;
+}
+
+.card_header_middle {
+  margin: 0 30px;
+}
+
+.card_body {
+  margin: 8rem 30px;
+  position: relative;
+}
+.plan_unavailable {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #5F6F7C;
+}
+
+.plan_offer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.check_offer {
+  color: #ec521d;
+}
+
+.plan_border {
+  margin-bottom: 2rem;
+}
+
+.plan_border::after {
+  content: " ";
+  position: absolute;
+  width: 18rem;
+  border-bottom: 2px dotted #3b4651;
+  margin-top: 3.5rem;
+}

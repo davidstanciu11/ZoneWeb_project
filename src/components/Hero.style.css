@@ -31,33 +31,15 @@
 }
 
 .hero_title_logo {
-  color: #FA541C;
+  color: #fa541c;
   letter-spacing: 0.5px;
   font-size: 5rem;
 }
 
 .hero_title_par {
-  color: #919EAB;
+  color: #919eab;
   padding-top: 2rem;
   font-size: 1.2rem;
-}
-
-.hero_btn {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border: none;
-  padding: 12px 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-.hero_btn:hover {
-  background-color: #919EAB;
-  transition: all 0.3s;
 }
 
 .hero_available {

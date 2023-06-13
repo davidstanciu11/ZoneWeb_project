@@ -1,6 +1,6 @@
 .design_section {
   width: 100vw;
-  min-height: 50vh;
+  min-height: 60vh;
   background: url("../assets/for_designer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,7 +9,7 @@
 
 .design_flex {
   width: 100vw;
-  height: 50vh;
+  height: 65vh;
   display: flex;
   justify-content: center;
   flex-direction: column;

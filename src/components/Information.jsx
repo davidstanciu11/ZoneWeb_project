@@ -241,7 +241,7 @@ export default function Information() {
                 <div className="avatar_plus">+5</div>
               </div>
               <div>
-                <Rating defaultValue={5} size="large" sx={{ color: "gold" }} />
+                <Rating defaultValue={5} size="large"  />
               </div>
             </div>
             <div className="info_buttons">
