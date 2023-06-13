@@ -9,7 +9,7 @@ export default function Questions() {
       question: "What's in the product packages?",
       answer:
         "Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in.",
-      open: true,
+      open: false,
     },
     {
       question: "How can I upgrade my product plan?",
@@ -63,7 +63,7 @@ export default function Questions() {
         <div className="faqs">
           {faqs.map((faq, i) => (
             <>
-              <Faq faq={faq} index={i} toggleFAQ={toggleFAQ} />
+              <Faq faq={faq} index={i} toggleFAQ={toggleFAQ} key={"faqs_" + i} />
             </>
           ))}
         </div>
