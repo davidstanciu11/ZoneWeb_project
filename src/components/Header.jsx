@@ -173,7 +173,12 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <NavLink className="nav_li">Documentation</NavLink>
+          <NavLink
+            className="nav_li"
+            to={"https://mui.com/material-ui/getting-started/overview/"}
+          >
+            Documentation
+          </NavLink>
         </div>
         <div className="second_nav_part">
           <div className="nav_circles">
@@ -197,7 +202,7 @@ export default function Header() {
           </div>
           <div className="nav_circles">
             <i className="icons_nav">
-              <FiSettings className="setting_rotate"/>
+              <FiSettings className="setting_rotate" />
               <span className="circe_settings"></span>
             </i>
           </div>
