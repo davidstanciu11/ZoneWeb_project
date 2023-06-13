@@ -5,7 +5,7 @@ import Information from "../components/Information";
 import Kit from "../components/Kit";
 import Plans from "../components/Plans";
 // import Purchase from "../components/Purchase";
-// import Questions from "../components/Questions";
+import Questions from "../components/Questions";
 import Starter from "../components/Starter";
 
 export default function Home() {
@@ -17,6 +17,7 @@ export default function Home() {
       <Features/>
       <Starter/>
       <Plans/>
+      <Questions/>
     </>
   );
 }
