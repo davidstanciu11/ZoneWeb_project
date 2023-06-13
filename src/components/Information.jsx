@@ -8,7 +8,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import { useState, useEffect } from "react";
 import { GrCloudUpload } from "react-icons/gr";
-import { AiOutlineCheckCircle } from "react-icons/ai";
+import { AiOutlineCheckCircle, AiOutlineCloseCircle } from "react-icons/ai";
 import { CiAlignLeft, CiAlignRight, CiAlignCenterH } from "react-icons/ci";
 import AvatarGirl from "../assets/avatar_1.jpg";
 import AvatarOrange from "../assets/avatar_2.jpg";
@@ -259,7 +259,7 @@ export default function Information() {
                 <p className="success_msg">
                   This is a <b className="bold">success</b> alert.
                 </p>
-                <button className="close_success">x</button>
+                <AiOutlineCloseCircle className="close_success" />
               </div>
             </div>
             <div className="info_buttons">

@@ -196,10 +196,8 @@
 }
 
 .close_success {
-  border: none;
-  background-color: transparent;
   color: #d3f7db;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.5s;
@@ -225,12 +223,10 @@
   background-color: #212b36 !important;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
 }
 
 .css-i5q14k-MuiDayCalendar-header {
   background-color: #212b36 !important;
-  
 }
 
 .css-nk89i7-MuiPickersCalendarHeader-root {
@@ -239,11 +235,11 @@
   border-top-left-radius: 10px;
 }
 .css-1vooibu-MuiSvgIcon-root {
-  color: #919EAB;
+  color: #919eab;
 }
 
 .css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
-  color: #919EAB;
+  color: #919eab;
 }
 
 .css-nk89i7-MuiPickersCalendarHeader-root {
@@ -255,11 +251,12 @@
 }
 
 .css-1yjjitx-MuiSwitch-track {
-  background-color: #505B65 !important;
+  background-color: #505b65 !important;
 }
 
-.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
-  background-color: #FA541C !important;
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+  + .MuiSwitch-track {
+  background-color: #fa541c !important;
   opacity: 1 !important;
 }
 .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
@@ -284,15 +281,15 @@
 }
 
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
-  color: #919EAB !important;
+  color: #919eab !important;
 }
 
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
-  color: #FA541C !important;
+  color: #fa541c !important;
 }
 
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-  border-color: #919EAB !important;
+  border-color: #919eab !important;
 }
 
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
@@ -300,13 +297,40 @@
 }
 
 .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
-  color: #55636F !important;
+  color: #55636f !important;
 }
 
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input:focus {
   color: white !important;
 }
 
-.css-xn6ruc>:not(style) {
+.css-xn6ruc > :not(style) {
   width: 15rem !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  background-color: #fff !important;
+}
+.css-1j8ztwx-MuiButtonBase-root-MuiTab-root {
+  color: #919eab !important;
+}
+.css-1j8ztwx-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: #fff !important;
+}
+
+.css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+  border: 1px solid #919eab !important;
+  color: white !important;
+}
+
+.css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: orangered !important;
+}
+
+.css-qa7bje-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: orangered !important;
+}
+
+.css-1beqopj-MuiPickersYear-yearButton.Mui-selected {
+  background-color: orangered !important;
 }
