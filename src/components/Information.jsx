@@ -265,7 +265,7 @@ export default function Information() {
             <div className="info_buttons">
               <div className="calendar">
                 <LocalizationProvider dateAdapter={AdapterDayjs}>
-                  <DateCalendar />
+                  <DateCalendar className="date_calendar" />
                 </LocalizationProvider>
               </div>
               <div className="second_part_btns">

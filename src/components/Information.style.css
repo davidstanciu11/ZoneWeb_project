@@ -238,7 +238,7 @@
   color: #919eab;
 }
 
-.css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
+/* .css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
   color: #919eab;
 }
 
@@ -261,6 +261,11 @@
 }
 .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
   color: white !important;
+} */
+
+.date_calendar {
+  color: #fff !important;
+  background-color: #212b36 !important;
 }
 
 .flex_label {
