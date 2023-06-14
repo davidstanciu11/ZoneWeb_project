@@ -345,6 +345,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .toggle_btns {
+    margin-left: 0;
+  }
 
   .infomation_par {
     font-size: 1rem;
