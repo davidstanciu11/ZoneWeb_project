@@ -17,7 +17,7 @@ export default function Features() {
         <div className="features_flex">
           <div className="features_desc">
             <p className="information_subtitle">FEATURE HIGHLIGHTS</p>
-            <h2 className="information_title">Have Everything You Need</h2>
+            <h2 className="information_title features_title">Have Everything You Need</h2>
             <p className="infomation_par">
               Let&#x27;s see what makes our theme super powerful and
               user-friendly!

@@ -53,3 +53,24 @@
     max-width: 30rem;
     text-align: center;
 }
+
+@media screen and (max-width: 480px) { 
+    .container_kit {
+        width: 80vw;
+        padding: 10px 20px;
+        margin-top: -5rem;
+    }
+
+    .kit_img {
+        width: 22rem;
+        margin-right: 2rem;
+    }
+    .kit_title {
+        font-size: 2rem;
+    }
+
+    .kit_desc {
+        padding-bottom: 2rem;
+        font-size: 1rem;
+    }
+}

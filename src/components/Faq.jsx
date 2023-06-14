@@ -5,7 +5,7 @@ export default function Faq({ faq, index, toggleFAQ }) {
     <>
       <div
         className={"faq " + (faq.open ? "open" : "")}
-        key={"faq_" + index}
+        key={index}
         onClick={() => toggleFAQ(index)}
       >
         <div className="faq_question">{faq.question}</div>

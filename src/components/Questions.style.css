@@ -42,3 +42,41 @@
     font-size: 1.2rem;
     color: #919EAB;
 }
+
+@media screen and (max-width: 480px) { 
+    .section_questions {
+        padding-bottom: 5rem;
+    }
+
+    .faq_title {
+        font-size: 1.5rem;
+    }
+    .faq {
+        margin: 0 2rem 0 2rem;
+    }
+
+    .faq_question {
+        font-size: 0.9rem !important;
+    }
+    .faq_question::after {
+        width: 23px !important;
+        height: 23px !important;
+        top: -3px !important;
+    }
+    .contact {
+        min-width: 340px;
+        height: 290px;
+        margin: 3rem 2rem 0 2rem;
+    }
+    .contact_title {
+        font-size: 1.4rem;
+    }
+
+    .contact_sub {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .css-xfwsqs-MuiButtonBase-root-MuiButton-root {
+        margin: 2rem 3rem 0 3rem !important;
+    }
+}

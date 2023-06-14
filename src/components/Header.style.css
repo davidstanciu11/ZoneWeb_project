@@ -59,7 +59,7 @@
   transition: all 3s;
 }
 
-.nav_li_active::before,
+.active::before,
 .nav_li:hover::before {
   content: " ";
   position: absolute;
@@ -233,7 +233,7 @@
 
 .dropdown_li_item {
   font-size: 0.9rem;
-  color: #8D99A6;
+  color: #8d99a6;
   padding-top: 1rem;
 }
 
@@ -271,11 +271,11 @@
   width: 100vw;
   position: absolute;
   top: 0;
-  left: -73.2rem;
+  left: -72rem;
   height: 5rem;
   z-index: 99;
   margin-top: -1.8rem;
-  background-color: rgba(27,33,41,0.9);
+  background-color: rgba(27, 33, 41, 0.9);
   backdrop-filter: blur(4px);
   display: flex;
   flex-direction: row;
@@ -289,7 +289,7 @@
 }
 
 .input_search {
-  background:transparent;
+  background: transparent;
   border: none;
   height: 1rem;
   margin-left: 1rem;
@@ -311,7 +311,7 @@
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
-  background-color: #FA541C;
+  background-color: #fa541c;
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
@@ -321,6 +321,29 @@
 }
 
 .search_btn:hover {
-  background-color: #B7230F;
+  background-color: #b7230f;
   transition: all 0.3s;
+}
+
+#mobile .menu_icon {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.links_list {
+  display: flex;
+  gap: 1.2rem;
+}
+@media screen and (max-width: 480px) {
+  .navbtn_buy {
+    display: none;
+  }
+
+  .navbar {
+    gap: 7rem;
+  }
+
+  .links_list {
+    display: none;
+  }
+  
 }

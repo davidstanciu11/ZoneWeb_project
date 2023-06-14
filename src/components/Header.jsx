@@ -31,10 +31,11 @@ export default function Header() {
             <span className="circle_logo"></span>
             <span className="version_nav">V2.0</span>
           </div>
-          <NavLink className="nav_li nav_li_active" to={"/home"}>
+          <div className="links_list">
+          <NavLink className="nav_li nav_li_active" to={"/home"} activeclassname="active">
             Home
           </NavLink>
-          <NavLink className="nav_li" to={"/components"}>
+          <NavLink className="nav_li" to={"/components"} activeclassname="active">
             Components
           </NavLink>
           <div className="nav_dropdown ">
@@ -178,7 +179,7 @@ export default function Header() {
             to={"https://mui.com/material-ui/getting-started/overview/"}
           >
             Documentation
-          </NavLink>
+          </NavLink></div>
         </div>
         <div className="second_nav_part">
           <div className="nav_circles">
@@ -206,10 +207,11 @@ export default function Header() {
               <span className="circe_settings"></span>
             </i>
           </div>
-          <NavLink>
             <button className="navbtn_buy">Buy Now</button>
-          </NavLink>
+          <div id="mobile">
         </div>
+        </div>
+        
       </nav>
     </>
   );

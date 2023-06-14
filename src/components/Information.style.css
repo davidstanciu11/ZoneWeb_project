@@ -334,3 +334,47 @@
 .css-1beqopj-MuiPickersYear-yearButton.Mui-selected {
   background-color: orangered !important;
 }
+
+@media screen and (max-width: 480px) {
+  .information_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .information_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infomation_par {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .information_container_functionalities {
+    width: 80vw;
+    border: none;
+  }
+  .info_buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info_buttons:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info_buttons:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info_buttons:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+  .info_buttons:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+}

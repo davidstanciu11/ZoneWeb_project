@@ -36,3 +36,25 @@
   font-size: 0.95rem;
   font-weight: 600;
 }
+
+@media screen and (max-width: 480px) { 
+  .features_flex {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .features_options {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+  }
+
+  .features_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+  }
+
+  .features_title  {
+    font-size: 1.6rem !important;
+  }
+}

@@ -63,7 +63,7 @@ export default function Questions() {
         <div className="faqs">
           {faqs.map((faq, i) => (
             <>
-              <Faq faq={faq} index={i} toggleFAQ={toggleFAQ} key={"faqs_" + i} />
+              <Faq faq={faq} index={i} toggleFAQ={toggleFAQ} key={"faq_" + i} />
             </>
           ))}
         </div>
