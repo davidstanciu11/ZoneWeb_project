@@ -93,6 +93,7 @@ export default function Questions() {
                 textTransform: "none",
                 ":hover": { backgroundColor: "#919eab" },
               }}
+              className="button_contact"
             >
               Contact Us
             </Button>
