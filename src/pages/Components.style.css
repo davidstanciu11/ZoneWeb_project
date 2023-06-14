@@ -73,7 +73,7 @@
   margin: 5rem 10rem 0 10rem;
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 15rem;
   padding-bottom: 5rem;
 }
 
@@ -170,17 +170,55 @@
 }
 
 .trademark {
-    font-size: 0.8rem;
-    color: #919EAB;
-    margin-left: 15rem;
+  font-size: 0.8rem;
+  color: #919eab;
+  margin-left: 15rem;
 }
 
 .footer_terms {
-    font-size: 0.8rem;
-    color: #919EAB;
-    cursor: pointer;
+  font-size: 0.8rem;
+  color: #919eab;
+  cursor: pointer;
 }
 
 .footer_terms:nth-child(2) {
-    margin-right: 15rem;
+  margin-right: 15rem;
+}
+
+.footer_pages {
+  display: flex;
+  max-height: 600px;
+  min-width: 505px;
+  gap: 2rem;
+}
+
+.footer_pages_first_part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+
+.footer_pages_second_part {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer_page {
+  max-height: 150px;
+}
+
+.footer_page_title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer_page_par {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  color: #919EAB;
+}
+
+.footer_page_par:hover {
+  cursor: pointer;
+  color: #212b36;
 }

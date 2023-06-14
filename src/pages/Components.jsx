@@ -168,11 +168,94 @@ export default function Components() {
             <h5 className="apps_title">Apps</h5>
             <img src={Apps} alt="apps" className="apps_icon" />
           </div>
-          <div className="footer_pages"></div>
+          <div className="footer_pages">
+            <div className="footer_pages_first_part">
+              <div className="footer_page">
+                <h3 className="footer_page_title">Marketing</h3>
+                <p className="footer_page_par">Landing</p>
+                <p className="footer_page_par">Services</p>
+                <p className="footer_page_par">Case Studies</p>
+                <p className="footer_page_par">Case Study</p>
+                <p className="footer_page_par">Blog Posts</p>
+                <p className="footer_page_par">Blog Post</p>
+                <p className="footer_page_par">About</p>
+                <p className="footer_page_par">Contact</p>
+              </div>
+              <div className="footer_page">
+                <h3 className="footer_page_title">Career</h3>
+                <p className="footer_page_par">Landing</p>
+                <p className="footer_page_par">Jobs</p>
+                <p className="footer_page_par">Job</p>
+                <p className="footer_page_par">Blog Posts</p>
+                <p className="footer_page_par">Blog Post</p>
+                <p className="footer_page_par">About</p>
+                <p className="footer_page_par">Contact</p>
+              </div>
+              <div className="footer_page">
+                <h3 className="footer_page_title">Travel</h3>
+                <p className="footer_page_par">Landing</p>
+                <p className="footer_page_par">Tours</p>
+                <p className="footer_page_par">Tour</p>
+                <p className="footer_page_par">Checkout</p>
+                <p className="footer_page_par">Order Completed</p>
+                <p className="footer_page_par">Blog Posts</p>
+                <p className="footer_page_par">Blog Post</p>
+                <p className="footer_page_par">About</p>
+                <p className="footer_page_par">Contact</p>
+              </div>
+              <div className="footer_page">
+                <h3 className="footer_page_title">E-learning</h3>
+                <p className="footer_page_par">Landing</p>
+                <p className="footer_page_par">Courses</p>
+                <p className="footer_page_par">Course</p>
+                <p className="footer_page_par">Blog Posts</p>
+                <p className="footer_page_par">Blog Post</p>
+                <p className="footer_page_par">About</p>
+                <p className="footer_page_par">Contact</p>
+              </div>
+            </div>
+            <div className="footer_pages_second_part">
+              <div className="footer_page">
+                <h3 className="footer_page_title">E-commerce</h3>
+                <p className="footer_page_par">Landing</p>
+                <p className="footer_page_par">Products</p>
+                <p className="footer_page_par">Product</p>
+                <p className="footer_page_par">Cart</p>
+                <p className="footer_page_par">Checkout</p>
+                <p className="footer_page_par">Order Completed</p>
+                <p className="footer_page_par">Wishlist</p>
+                <p className="footer_page_par">Compare</p>
+                <p className="footer_page_par">Account Personal</p>
+                <p className="footer_page_par">Account Wishlist</p>
+                <p className="footer_page_par">Account Vouchers</p>
+                <p className="footer_page_par">Account Orders</p>
+                <p className="footer_page_par">Account Payment</p>
+              </div>{" "}
+              <div className="footer_page">
+                <h3 className="footer_page_title">Common</h3>
+                <p className="footer_page_par">Login Cover</p>
+                <p className="footer_page_par">Login Illustration</p>
+                <p className="footer_page_par">Login Background</p>
+                <p className="footer_page_par">Register Cover</p>
+                <p className="footer_page_par">Register Illustration</p>
+                <p className="footer_page_par">Register Background</p>
+                <p className="footer_page_par">Reset Password</p>
+                <p className="footer_page_par">Verify Code</p>
+                <p className="footer_page_par">404 Error</p>
+                <p className="footer_page_par">500 Error</p>
+                <p className="footer_page_par">Maintenance</p>
+                <p className="footer_page_par">Coming Soon</p>
+                <p className="footer_page_par">Pricing 1</p>
+                <p className="footer_page_par">Pricing 02</p>
+                <p className="footer_page_par">Payment</p>
+                <p className="footer_page_par">Support</p>
+              </div>
+            </div>
+          </div>
         </div>
         <footer className="page_footer">
           <div className="trademark">© 2023. All rights reserved</div>
-          <div style={{display: "flex", gap:"1rem"}}>
+          <div style={{ display: "flex", gap: "1rem" }}>
             <p className="footer_terms">Help Center</p>
             <p className="footer_terms">Terms of Service</p>
           </div>
