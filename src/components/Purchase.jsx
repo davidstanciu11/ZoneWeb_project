@@ -9,7 +9,7 @@ export default function Purchase() {
           <h2 className="purchase_title">
             <span className="purchase_start">Start Now</span> <br /> Create Your <br /> Website Today
           </h2>
-          <Button>Purchase Now</Button>
+          <Button className="figma_button">Purchase Now</Button>
         </div>
       </section>
     </>

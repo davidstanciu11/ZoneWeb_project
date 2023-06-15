@@ -3,7 +3,7 @@
 .purchase_section {
     width: 100vw;
     height: 100vh;
-    background: url("../assets/advertisement.jpg");
+    background: url("../assets/advertisment.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -27,4 +27,11 @@
 
 .purchase_start {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 480px) { 
+    .purchase_title {
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
 }

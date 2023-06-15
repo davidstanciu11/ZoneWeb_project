@@ -203,7 +203,8 @@
   transition: all 0.5s;
 }
 
-.date_calendar .css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition {
+.date_calendar
+  .css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition {
   background-color: #161c24 !important;
 }
 
@@ -223,7 +224,8 @@
   color: #fff !important;
 }
 
-.date_calendar .css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition {
+.date_calendar
+  .css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition {
   background-color: #212b36 !important;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -242,7 +244,8 @@
   color: #919eab;
 }
 
- .date_calendar .css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
+.date_calendar
+  .css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
   color: #919eab;
 }
 
@@ -267,15 +270,15 @@
 }
 
 .date_calendar .css-4ggly9:not(.Mui-selected) {
-    border: 1px solid white !important;
-    color: white !important;
+  border: 1px solid white !important;
+  color: white !important;
 }
 .date_calendar .css-sldnni {
-  color: #919EAB !important;
+  color: #919eab !important;
 }
 
 .date_calendar .css-1cw4hi4 {
-  color: #919EAB !important;
+  color: #919eab !important;
 }
 
 .date_calendar .css-1bqdsf2.Mui-selected {
@@ -285,14 +288,15 @@
 .date_calendar .css-10qkmc3 {
   color: white !important;
 }
-.date_calendar .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+.date_calendar
+  .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
   + .MuiSwitch-track {
   background-color: #fa541c !important;
   opacity: 1 !important;
 }
 .date_calendar .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
   color: white !important;
-} 
+}
 
 .date_calendar {
   color: #fff !important;
@@ -347,9 +351,8 @@
   color: #fff !important;
 }
 
-.date_calendar .css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root:not(
-    .Mui-selected
-  ) {
+.date_calendar
+  .css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
   border: 1px solid #919eab !important;
   color: white !important;
 }
@@ -358,7 +361,7 @@
   background-color: orangered !important;
 }
 .css-1nr2wod.Mui-checked {
-  color: orangered !important; 
+  color: orangered !important;
 }
 .css-19gndve {
   background-color: white !important;
@@ -371,12 +374,13 @@
 .css-vubbuv {
   color: orangered !important;
 }
-.css-1x5jdmq  {
-  background-color: #1F262E !important;
+.css-1x5jdmq {
+  background-color: #1f262e !important;
   color: white !important;
 }
 .css-p0rm37 {
-  color: #545E6A !important; }
+  color: #545e6a !important;
+}
 
 .css-1ald77x.Mui-focused {
   color: white !important;
@@ -385,7 +389,6 @@
 .css-1x5jdmq:focus {
   outline-color: white !important;
 }
-
 
 .css-1nr2wod.Mui-checked + .MuiSwitch-track {
   background-color: #505b65;
@@ -398,7 +401,16 @@
   background-color: orangered !important;
 }
 
+
+/* Mobile Responsive */
+
 @media screen and (max-width: 480px) {
+  .css-1l987pb {
+    margin-left: 2rem !important;
+  }
+  .css-1ylsrmj {
+    margin-left: 3rem !important;
+  }
   .information_flex {
     flex-direction: column;
     align-items: center;
