@@ -112,17 +112,17 @@
   color: #828e9a;
 }
 
-.css-1x51dt5-MuiInputBase-input-MuiInput-input {
-  margin-top: 2rem !important;
-  color: #fff !important;
-}
-
-.css-q0jhri-MuiInputBase-root-MuiInput-root:after {
+.css-1nbw9tx::after {
   border-bottom: 2px solid white !important;
 }
 
-.css-q0jhri-MuiInputBase-root-MuiInput-root:before {
+.css-1nbw9tx::before {
   border-bottom: 1px solid gray !important;
+}
+
+.css-mnn31 {
+  margin-top: 2rem !important;
+  color: #fff !important;
 }
 
 .email_add {

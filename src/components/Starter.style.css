@@ -31,7 +31,10 @@
   margin-bottom: 2rem;
 }
 
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+
+
+.figma_button {
+  background-color: #fa541c !important;
   background-color: #fa541c !important;
   color: #fff !important;
   text-transform: initial !important;
@@ -45,6 +48,6 @@
   border-radius: 10px !important;
 }
 
-.css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {
-    background-color: #B3200E !important;
+.figma_button:hover {
+  background-color: #B3200E !important;
 }

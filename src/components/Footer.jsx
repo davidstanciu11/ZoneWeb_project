@@ -23,7 +23,7 @@ export default function Footer() {
             d="M114.742 355.332H256v66.097H24v-61.376l140.323-203.956H24V90h232v61.376L114.742 355.332z"
           ></path>
         </svg>
-        <p className="reserved">© 2023. All rights reserved</p>
+        <p className="reserved">© 2023. Not all rights reserve to David Stanciu (this is a mock-up page)</p>
       </section>
     </>
   );

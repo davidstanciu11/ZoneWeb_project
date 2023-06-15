@@ -317,14 +317,6 @@
   align-items: flex-start;
 }
 
-/* .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root { 
-  color: #919eab !important;
-}
-
-.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
-  color: #fa541c !important;
-} */
-
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
   border-color: #919eab !important;
 }
@@ -365,7 +357,39 @@
 .date_calendar .css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
   background-color: orangered !important;
 }
+.css-1nr2wod.Mui-checked {
+  color: orangered !important; 
+}
+.css-19gndve {
+  background-color: white !important;
+}
 
+.css-1nr2wod.Mui-checked + .MuiSwitch-track {
+  background: orangered !important;
+  opacity: 1 !important;
+}
+.css-vubbuv {
+  color: orangered !important;
+}
+.css-1x5jdmq  {
+  background-color: #1F262E !important;
+  color: white !important;
+}
+.css-p0rm37 {
+  color: #545E6A !important; }
+
+.css-1ald77x.Mui-focused {
+  color: white !important;
+}
+
+.css-1x5jdmq:focus {
+  outline-color: white !important;
+}
+
+
+.css-1nr2wod.Mui-checked + .MuiSwitch-track {
+  background-color: #505b65;
+}
 .date_calendar .css-qa7bje-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
   background-color: orangered !important;
 }
