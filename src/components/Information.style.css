@@ -410,7 +410,7 @@
 }
 
 .css-ttwr4n {
-  color: #fff !important;
+  background-color: #fff !important;
 }
 
 /* Mobile Responsive */
@@ -465,5 +465,60 @@
   .info_buttons:nth-child(2) {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .css-1l987pb {
+    margin-left: 2rem !important;
+  }
+  .css-1ylsrmj {
+    margin-left: 3rem !important;
+  }
+  .information_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .information_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35rem
+  }
+  .toggle_btns {
+    margin-left: 0;
+  }
+
+  .infomation_par {
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: 600px;
+  }
+  .information_container_functionalities {
+    width: 80vw;
+    border: none;
+  }
+  .info_buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .info_buttons:nth-child(5) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info_buttons:nth-child(4) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .info_buttons:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+  }
+  .info_buttons:nth-child(2) {
+    display: flex;
+    flex-direction: row;
   }
 }

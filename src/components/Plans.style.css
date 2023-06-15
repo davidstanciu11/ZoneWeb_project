@@ -148,3 +148,35 @@
     margin-bottom: 2rem;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {  
+  .plans_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .plans_title {
+    font-size: 1.5rem;
+  }
+
+  .plan_card:nth-child(3) {
+    margin-top: -5rem;
+    margin-bottom: 2rem;
+  }
+  .plan_card {
+    width: 80vw;
+  }
+
+  .css-1p8jt2b-MuiButtonBase-root-MuiButton-root {
+    margin-left: 25% !important; 
+  }
+
+  .css-131jbt2-MuiButtonBase-root-MuiButton-root {
+    margin-left: 25% !important; 
+  }
+
+  .css-1v3wjm3-MuiButtonBase-root-MuiButton-root {
+    margin-left: 25% !important; 
+
+  }
+}

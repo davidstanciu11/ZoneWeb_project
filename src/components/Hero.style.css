@@ -60,8 +60,7 @@
   color: #fff;
 }
 
-
-@media screen and (max-width: 480px) {  
+@media screen and (max-width: 480px) {
   .hero_png {
     display: none;
   }
@@ -91,7 +90,7 @@
     margin-top: 6rem;
   }
 
-  .toggle_btns  {
+  .toggle_btns {
     margin-left: 0;
   }
   .hero_title_par {
@@ -107,7 +106,7 @@
   .css-1rlr8yu-MuiButtonBase-root-MuiButton-root {
     margin-left: 2rem !important;
   }
-  .css-1lpljoe-MuiCircularProgress-root{
+  .css-1lpljoe-MuiCircularProgress-root {
     margin-left: 3rem !important;
   }
 
@@ -118,5 +117,63 @@
   .css-112nre2 {
     margin-left: 25% !important;
   }
+}
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero_png {
+    display: none;
+  }
+
+  .hero_title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 2rem 0 2rem;
+  }
+
+  .hero_title_logo {
+    font-size: 4rem;
+  }
+  .hero_flex {
+    align-items: center;
+  }
+  .hero_details {
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+  .css-xfwsqs-MuiButtonBase-root-MuiButton-root {
+    margin-left: 23.5% !important;
+  }
+  .information_subtitle {
+    margin-top: 6rem;
+  }
+
+  .toggle_btns {
+    margin-left: 0;
+  }
+  .hero_title_par {
+    font-size: 2rem;
+    max-width: 3000px;
+    font-weight: 400;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .logo_icons {
+    justify-content: center;
+  }
+  .css-1rlr8yu-MuiButtonBase-root-MuiButton-root {
+    margin-left: 2rem !important;
+  }
+  .css-1lpljoe-MuiCircularProgress-root {
+    margin-left: 3rem !important;
+  }
+
+  .information_section {
+    padding-bottom: 50rem;
+  }
+
+  .css-xfwsqs-MuiButtonBase-root-MuiButton-root {
+    margin-left: 38% !important;
+  }
 }

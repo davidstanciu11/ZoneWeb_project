@@ -245,3 +245,26 @@
     margin-right: 5rem;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+  .components_page {
+    overflow: hidden;
+  }
+  .component_container {
+    margin: 0 1rem 0 1rem;
+  }
+  .container_extensions {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem 2rem 0 2rem;
+  }
+  .footer_pages {
+    display: none;
+  }
+  .components_footer {
+    margin: 5rem 1rem 0 1rem;
+  }
+  .trademark {
+    margin-left: 4rem;
+    margin-right: 5rem;
+  }
+}

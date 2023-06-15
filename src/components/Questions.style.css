@@ -80,3 +80,41 @@
         margin: 2rem 3rem 0 3rem !important;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .section_questions {
+        padding-bottom: 5rem;
+    }
+
+    .faq_title {
+        font-size: 1.5rem;
+    }
+    .faq {
+        margin: 0 2rem 0 2rem;
+    }
+
+    .faq_question {
+        font-size: 0.9rem !important;
+    }
+    .faq_question::after {
+        width: 23px !important;
+        height: 23px !important;
+        top: -3px !important;
+    }
+    .contact {
+        min-width: 600px;
+        height: 290px;
+        margin: 3rem 2rem 0 2rem;
+    }
+    .contact_title {
+        font-size: 1.4rem;
+    }
+
+    .contact_sub {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .button_contact  {
+        margin: 2rem 3rem 0 3rem !important;
+    }
+}

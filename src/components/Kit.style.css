@@ -74,3 +74,24 @@
         font-size: 1rem;
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    .container_kit {
+        width: 80vw;
+        padding: 10px 20px;
+        margin-top: -5rem;
+    }
+
+    .kit_img {
+        width: 24rem;
+        margin-right: 2rem;
+    }
+    .kit_title {
+        font-size: 3rem;
+    }
+
+    .kit_desc {
+        padding-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+}
