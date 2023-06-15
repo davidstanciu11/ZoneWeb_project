@@ -207,6 +207,10 @@
   background-color: #161c24 !important;
 }
 
+.date_calendar .css-1hrukl9 {
+  color: #fff;
+}
+
 .date_calendar .css-qa7bje-MuiButtonBase-root-MuiPickersDay-root {
   color: #fff !important;
 }
@@ -254,6 +258,33 @@
   background-color: #505b65 !important;
 }
 
+.date_calendar .css-1hrukl9.Mui-selected {
+  background-color: orangered !important;
+}
+
+.date_calendar .css-4ggly9.Mui-selected {
+  background-color: orangered !important;
+}
+
+.date_calendar .css-4ggly9:not(.Mui-selected) {
+    border: 1px solid white !important;
+    color: white !important;
+}
+.date_calendar .css-sldnni {
+  color: #919EAB !important;
+}
+
+.date_calendar .css-1cw4hi4 {
+  color: #919EAB !important;
+}
+
+.date_calendar .css-1bqdsf2.Mui-selected {
+  background-color: orangered !important;
+}
+
+.date_calendar .css-10qkmc3 {
+  color: white !important;
+}
 .date_calendar .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
   + .MuiSwitch-track {
   background-color: #fa541c !important;
