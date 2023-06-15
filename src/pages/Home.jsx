@@ -7,19 +7,25 @@ import Plans from "../components/Plans";
 import Purchase from "../components/Purchase";
 import Questions from "../components/Questions";
 import Starter from "../components/Starter";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  Aos.init({
+    duration: 1800,
+    offset: 100,
+  });
   return (
     <>
       <Hero />
-      <Kit/>
-      <Information/>
-      <Features/>
-      <Starter/>
-      <Plans/>
-      <Questions/>
-      <Purchase/>
-      <Footer/>
+      <Kit />
+      <Information />
+      <Features />
+      <Starter />
+      <Plans />
+      <Questions />
+      <Purchase />
+      <Footer />
     </>
   );
 }

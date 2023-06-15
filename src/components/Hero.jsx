@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section className="hero_section">
       <div className="hero_flex">
-        <div className="hero_details">
+        <div className="hero_details" data-aos="fade-down" data-aos-delay="500">
           <h1 className="hero_title">
             Create Your Website Today with{" "}
             <span className="hero_title_logo"> Zone</span>
@@ -48,7 +48,7 @@ export default function Hero() {
             <SiBootstrap className="logo_icons_item" />
           </div>
         </div>
-        <div className="hero_img">
+        <div className="hero_img" data-aos="fade-down" data-aos-delay="500">
           <img src={HomeHeropng} alt="" className="hero_png" />
         </div>
       </div>

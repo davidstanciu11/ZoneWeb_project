@@ -51,7 +51,7 @@ export default function Information() {
     <>
       <section className="information_section">
         <div className="information_flex">
-          <div className="information_desc">
+          <div className="information_desc" data-aos="fade-right" data-aos-delay="200">
             <p className="information_subtitle">INTERFACE STARTER KIT</p>
             <h2 className="information_title">Flexible Components</h2>
             <p className="infomation_par">
@@ -65,7 +65,7 @@ export default function Information() {
               </button>
             </Link>
           </div>
-          <div className="information_container_functionalities">
+          <div className="information_container_functionalities" data-aos="fade-left" data-aos-delay="200">
             <div className="info_buttons">
               <Button
                 variant="contained"

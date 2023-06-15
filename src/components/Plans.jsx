@@ -8,14 +8,14 @@ export default function Plans() {
     <>
       <section className="section_plans">
         <div className="plans_flex">
-          <div className="plans_desc">
+          <div className="plans_desc" data-aos="fade-up" data-aos-delay="300">
             <p className="plans_sub">PRICING PLANS</p>
             <h2 className="plans_title">The Right Plan For Your Business</h2>
             <p className="plans_par">
               Choose the perfect plan for your needs. Always flexible to grow.
             </p>
           </div>
-          <div className="plans_container">
+          <div className="plans_container" data-aos="fade-down">
             <div className="plan_card">
               <div className="card_header">
                 <p className="plan_name">STANDARD</p>

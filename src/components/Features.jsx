@@ -15,7 +15,7 @@ export default function Features() {
     <>
       <section className="features">
         <div className="features_flex">
-          <div className="features_desc">
+          <div className="features_desc" data-aos="fade-right" data-aos-delay="200">
             <p className="information_subtitle">FEATURE HIGHLIGHTS</p>
             <h2 className="information_title features_title">Have Everything You Need</h2>
             <p className="infomation_par">
@@ -23,7 +23,7 @@ export default function Features() {
               user-friendly!
             </p>
           </div>
-          <div className="features_options">
+          <div className="features_options"  data-aos="fade-left" data-aos-delay="200">
             <div className="container_features">
               <CgWebsite className="features_png" />
               <p className="icons_sub">5 Prebuilt Websites</p>
