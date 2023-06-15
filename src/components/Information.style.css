@@ -203,33 +203,33 @@
   transition: all 0.5s;
 }
 
-.css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition {
+.date_calendar .css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition {
   background-color: #161c24 !important;
 }
 
-.css-qa7bje-MuiButtonBase-root-MuiPickersDay-root {
+.date_calendar .css-qa7bje-MuiButtonBase-root-MuiPickersDay-root {
   color: #fff !important;
 }
 
-.css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel {
+.date_calendar .css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel {
   color: #727e8a !important;
 }
 
-.css-dplwbx-MuiPickersCalendarHeader-label {
+.date_calendar .css-dplwbx-MuiPickersCalendarHeader-label {
   color: #fff !important;
 }
 
-.css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition {
+.date_calendar .css-1cafy48-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition {
   background-color: #212b36 !important;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-.css-i5q14k-MuiDayCalendar-header {
+.date_calendar .css-i5q14k-MuiDayCalendar-header {
   background-color: #212b36 !important;
 }
 
-.css-nk89i7-MuiPickersCalendarHeader-root {
+.date_calendar .css-nk89i7-MuiPickersCalendarHeader-root {
   background-color: #212b36 !important;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -238,34 +238,35 @@
   color: #919eab;
 }
 
-/* .css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
+ .date_calendar .css-1tkx1wf-MuiSvgIcon-root-MuiPickersCalendarHeader-switchViewIcon {
   color: #919eab;
 }
 
-.css-nk89i7-MuiPickersCalendarHeader-root {
+.date_calendar .css-nk89i7-MuiPickersCalendarHeader-root {
   margin-bottom: 0 !important;
 }
 
-.css-1beqopj-MuiPickersYear-yearButton {
+.date_calendar .css-1beqopj-MuiPickersYear-yearButton {
   color: white !important;
 }
 
-.css-1yjjitx-MuiSwitch-track {
+.date_calendar .css-1yjjitx-MuiSwitch-track {
   background-color: #505b65 !important;
 }
 
-.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+.date_calendar .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
   + .MuiSwitch-track {
   background-color: #fa541c !important;
   opacity: 1 !important;
 }
-.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+.date_calendar .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
   color: white !important;
-} */
+} 
 
 .date_calendar {
   color: #fff !important;
   background-color: #212b36 !important;
+  border-radius: 10px !important;
 }
 
 .flex_label {
@@ -285,13 +286,13 @@
   align-items: flex-start;
 }
 
-.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+/* .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root { 
   color: #919eab !important;
 }
 
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
   color: #fa541c !important;
-}
+} */
 
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
   border-color: #919eab !important;
@@ -313,30 +314,32 @@
   width: 15rem !important;
 }
 
-.css-1aquho2-MuiTabs-indicator {
+.date_calendar .css-1aquho2-MuiTabs-indicator {
   background-color: #fff !important;
 }
-.css-1j8ztwx-MuiButtonBase-root-MuiTab-root {
+.date_calendar .css-1j8ztwx-MuiButtonBase-root-MuiTab-root {
   color: #919eab !important;
 }
-.css-1j8ztwx-MuiButtonBase-root-MuiTab-root.Mui-selected {
+.date_calendar .css-1j8ztwx-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #fff !important;
 }
 
-.css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected) {
+.date_calendar .css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root:not(
+    .Mui-selected
+  ) {
   border: 1px solid #919eab !important;
   color: white !important;
 }
 
-.css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+.date_calendar .css-1jsy6pn-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
   background-color: orangered !important;
 }
 
-.css-qa7bje-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+.date_calendar .css-qa7bje-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
   background-color: orangered !important;
 }
 
-.css-1beqopj-MuiPickersYear-yearButton.Mui-selected {
+.date_calendar .css-1beqopj-MuiPickersYear-yearButton.Mui-selected {
   background-color: orangered !important;
 }
 
