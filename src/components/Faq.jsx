@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Faq.style.css";
 
 export default function Faq({ faq, index, toggleFAQ }) {
@@ -8,7 +9,7 @@ export default function Faq({ faq, index, toggleFAQ }) {
         key={index}
         onClick={() => toggleFAQ(index)}
       >
-        <div className="faq_question">{faq.question}</div>
+        <div className="faq_question" >{faq.question}</div>
         <div className="faq_answer">{faq.answer}</div>
       </div>
     </>

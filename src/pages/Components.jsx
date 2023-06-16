@@ -7,10 +7,14 @@ import {
   AiOutlineTwitter,
 } from "react-icons/ai";
 import Apps from "../assets/apps.png";
+import { useEffect } from "react";
 
 const ariaLabel = { "aria-label": "description" };
 
 export default function Components() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <section className="components_page">
