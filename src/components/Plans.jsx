@@ -53,7 +53,7 @@ export default function Plans() {
                   Commercial applications
                 </p>
               </div>
-              <Button
+              <Button className="choose_plan_tablet"
                 sx={{
                   mt: "-3rem",
                   ml: "1.5rem",
@@ -111,7 +111,7 @@ export default function Plans() {
                   Commercial applications
                 </p>
               </div>
-              <Button
+              <Button className="choose_plan_tablet choose_plan_tablet_middle"
                 sx={{
                   mt: "-2.9rem",
                   ml: "1.5rem",
@@ -169,7 +169,7 @@ export default function Plans() {
                   Commercial applications
                 </p>
               </div>
-              <Button
+              <Button className="choose_plan_tablet"
                 sx={{
                   mt: "-3rem",
                   ml: "1.5rem",

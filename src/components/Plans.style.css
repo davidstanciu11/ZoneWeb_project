@@ -150,6 +150,15 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {  
+.choose_plan_tablet {
+  margin: auto !important;
+  margin-top: -3rem !important;
+}
+
+.choose_plan_tablet_middle {
+  margin-top: 0 !important;
+}
+
   .plans_container {
     flex-direction: column;
     justify-content: center;

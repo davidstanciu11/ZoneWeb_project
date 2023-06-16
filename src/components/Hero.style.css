@@ -124,6 +124,11 @@
     display: none;
   }
 
+  .figma_hero_btn {
+    margin: auto !important;
+    margin-top: 2rem !important;
+  }
+
   .hero_title {
     font-size: 4rem;
     font-weight: 700;

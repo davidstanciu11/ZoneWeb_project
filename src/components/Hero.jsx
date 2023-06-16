@@ -19,7 +19,7 @@ export default function Hero() {
             The ZONE is built on top of MUI, a powerful library that provides
             flexible, customizable, and easy-to-use components.
           </p>
-          <Button
+          <Button className="figma_hero_btn"
             sx={{
               mt: "2rem",
               display: "flex",
